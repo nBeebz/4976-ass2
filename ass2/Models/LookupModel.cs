@@ -6,6 +6,13 @@ using System.Web;
 
 namespace ass2.Models
 {
+    public class FiscalYear
+    {
+        [Key]
+        public int id { get; set; }
+        public string value { get; set; }
+    }
+
     public class RiskLevel
     {
         [Key]

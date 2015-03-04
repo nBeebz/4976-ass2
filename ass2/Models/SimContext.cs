@@ -8,6 +8,7 @@ namespace MigrationsDemo
 {
     public class SimContext : DbContext
     {
+        public DbSet<FiscalYear> FiscalYears { get; set; }
         public DbSet<RiskLevel> RiskLevels { get; set; }
         public DbSet<Crisis> Crises { get; set; }
         public DbSet<Service> Services { get; set; }
@@ -25,6 +26,8 @@ namespace MigrationsDemo
         public DbSet<RepeatClient> RepeatClients { get; set; }
         public DbSet<DuplicateFile> DuplicateFiles { get; set; }
         public DbSet<StatusOfFile> StatusOfFiles { get; set; }
+
+        public virtual DbSet<ass2.Models.Client> Clients { get; set; }
 
     }
 

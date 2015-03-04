@@ -181,6 +181,8 @@ namespace ass2.Migrations
                 new StatusOfFile { value = "Closed" },
                 new StatusOfFile { value = "Open" }
             );
+
+
         }
     }
 }
