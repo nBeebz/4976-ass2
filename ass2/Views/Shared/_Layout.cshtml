@@ -25,10 +25,10 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        <a id="menu1" data-toggle="dropdown">
                             Lookup Tables
                             <span class="caret"></span>
-                        </button>
+                        </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                             <li role="presentation">@Html.ActionLink("RiskLevels", "Index", "RiskLevels", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("Crises", "Index", "Crises", new { id = 1 }, new { role = "menuitem" })</li>
@@ -47,6 +47,32 @@
                             <li role="presentation">@Html.ActionLink("RepeatClients", "Index", "RepeatClients", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("DuplicateFiles", "Index", "DuplicateFiles", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("StatusOfFiles", "Index", "StatusOfFiles", new { id = 1 }, new { role = "menuitem" })</li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a id="menu2" data-toggle="dropdown">
+                            Smart Lookup Tables
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+                            <li role="presentation"> @Html.ActionLink("SexWorkExploitations", "Index", "SexWorkExploitations", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("MultiplePerpetrators", "Index", "MultiplePerpetrators", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("DrugFacilitatedAssaults", "Index", "DrugFacilitatedAssaults", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("CityOfAssaults", "Index", "CityOfAssaults", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("CityOfResidences", "Index", "CityOfResidences", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("ReferringHospitals", "Index", "ReferringHospitals", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("HospitalAttendeds", "Index", "HospitalAttendeds", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("SocialWorkAttendances", "Index", "SocialWorkAttendances", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("PoliceAttendances", "Index", "PoliceAttendances", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("VictimServicesAttendances", "Index", "VictimServicesAttendances", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("MedicalOnlies", "Index", "MedicalOnlies", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("EvidenceStoreds", "Index", "EvidenceStoreds", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("HIVMeds", "Index", "HIVMeds", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("ReferredtoCBVS", "Index", "ReferredtoCBVS", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("PoliceReporteds", "Index", "PoliceReporteds", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("ThirdPartyReports", "Index", "ThirdPartyReports", new { id = 1 }, new { role = "menuitem" }) </li>
+                            <li role="presentation"> @Html.ActionLink("BadDateReports", "Index", "BadDateReports", new { id = 1 }, new { role = "menuitem" }) </li>
                         </ul>
                     </li>
                 </ul>

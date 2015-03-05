@@ -26,6 +26,24 @@ namespace MigrationsDemo
         public DbSet<DuplicateFile> DuplicateFiles { get; set; }
         public DbSet<StatusOfFile> StatusOfFiles { get; set; }
 
+        public DbSet<SexWorkExploitation> SexWorkExploitation { get; set; }
+        public DbSet<MultiplePerpetrators> MultiplePerpetrators { get; set; }
+        public DbSet<DrugFacilitatedAssault> DrugFacilitatedAssault { get; set; }
+        public DbSet<CityOfAssault> CityOfAssault { get; set; }
+        public DbSet<CityOfResidence> CityOfResidence { get; set; }
+        public DbSet<ReferringHospital> ReferringHospital { get; set; }
+        public DbSet<HospitalAttended> HospitalAttended { get; set; }
+        public DbSet<SocialWorkAttendance> SocialWorkAttendance { get; set; }
+        public DbSet<PoliceAttendance> PoliceAttendance { get; set; }
+        public DbSet<VictimServicesAttendance> VictimServicesAttendance { get; set; }
+        public DbSet<MedicalOnly> MedicalOnly { get; set; }
+        public DbSet<EvidenceStored> EvidenceStored { get; set; }
+        public DbSet<HIVMeds> HIVMeds { get; set; }
+        public DbSet<ReferredToCBVS> ReferredToCBVS { get; set; }
+        public DbSet<PoliceReported> PoliceReported { get; set; }
+        public DbSet<ThirdPartyReport> ThirdPartyReport { get; set; }
+        public DbSet<BadDateReport> BadDateReport { get; set; }
+
     }
 
 
