@@ -16,6 +16,17 @@ namespace ass2.Migrations
 
         protected override void Seed(MigrationsDemo.SimContext context)
         {
+            //Seeding users
+            if (!(context.Users.Any(u => u.UserName == "dj@dj.com")))
+            {
+                var userStore = new UserStore<ApplicationUser>(context);
+                var userManager = new UserManager<ApplicationUser>(userStore);
+                var userToInsert = new ApplicationUser { UserName = "dj@dj.com", PhoneNumber = "0797697898" };
+                userManager.Create(userToInsert, "Password@123");
+            }
+
+
+
             context.RiskLevels.AddOrUpdate(
                 a => a.id,
                 new RiskLevel { value = "High" },
@@ -192,15 +203,6 @@ namespace ass2.Migrations
                 new FiscalYear { value = "15-16" },
                 new FiscalYear { value = "16-17" }
             );
-
-            /*
-            context.Clients.AddOrUpdate(
-                a => a.id,
-                new Client { 
-                    ClientReferenceNum = 
-                
-                },
-            );*/
         }
     }
 }
