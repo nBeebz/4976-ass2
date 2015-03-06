@@ -197,15 +197,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503040807506_LookupInitialCreate.cs" />
-    <Compile Include="Migrations\201503040807506_LookupInitialCreate.Designer.cs">
-      <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201503052201349_SmartLookupAdded.cs" />
-    <Compile Include="Migrations\201503052201349_SmartLookupAdded.Designer.cs">
-      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\AppConfig\Configuration.cs" />
+    <Compile Include="Migrations\SimConfig\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\LookupModel.cs" />
@@ -440,14 +433,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503040807506_LookupInitialCreate.resx">
-      <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503052201349_SmartLookupAdded.resx">
-      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
