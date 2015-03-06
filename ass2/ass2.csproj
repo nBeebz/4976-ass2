@@ -173,12 +173,29 @@
     <Compile Include="Controllers\LookupControllers\ProgramsController.cs" />
     <Compile Include="Controllers\LookupControllers\ReferralContactsController.cs" />
     <Compile Include="Controllers\LookupControllers\ReferralSourcesController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\ReferringHospitalsController.cs" />
     <Compile Include="Controllers\LookupControllers\RepeatClientsController.cs" />
     <Compile Include="Controllers\LookupControllers\RiskLevelsController.cs" />
     <Compile Include="Controllers\LookupControllers\RiskStatusController.cs" />
     <Compile Include="Controllers\LookupControllers\ServicesController.cs" />
     <Compile Include="Controllers\LookupControllers\StatusOfFilesController.cs" />
     <Compile Include="Controllers\LookupControllers\VictimOfIncidentsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\BadDateReportsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\CityOfAssaultsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\CityOfResidencesController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\DrugFacilitatedAssaultsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\EvidenceStoredsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\HIVMedsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\HospitalAttendedsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\MedicalOnliesController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\MultiplePerpetratorsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\PoliceAttendancesController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\PoliceReportedsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\ReferredToCBVSController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\SexWorkExploitationsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\SocialWorkAttendancesController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\ThirdPartyReportsController.cs" />
+    <Compile Include="Controllers\SmartLookupControllers\VictimOfIncidentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -186,13 +203,22 @@
     <Compile Include="Migrations\201503040807506_LookupInitialCreate.Designer.cs">
       <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503052201349_SmartLookupAdded.cs" />
+    <Compile Include="Migrations\201503052201349_SmartLookupAdded.Designer.cs">
+      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503060722201_SmartClient.cs" />
+    <Compile Include="Migrations\201503060722201_SmartClient.Designer.cs">
+      <DependentUpon>201503060722201_SmartClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ClientModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\LookupModel.cs" />
     <Compile Include="Models\SimContext.cs" />
-    <Compile Include="Models\Smart.cs" />
+    <Compile Include="Models\SmartLookupModel.cs" />
+    <Compile Include="Models\SmartModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -332,16 +358,91 @@
     <Content Include="Views\VictimOfIncidents\Details.cshtml" />
     <Content Include="Views\VictimOfIncidents\Edit.cshtml" />
     <Content Include="Views\VictimOfIncidents\Index.cshtml" />
+    <Content Include="Views\SexWorkExploitations\Create.cshtml" />
+    <Content Include="Views\SexWorkExploitations\Delete.cshtml" />
+    <Content Include="Views\SexWorkExploitations\Details.cshtml" />
+    <Content Include="Views\SexWorkExploitations\Edit.cshtml" />
+    <Content Include="Views\SexWorkExploitations\Index.cshtml" />
+    <Content Include="Views\MultiplePerpetrators\Create.cshtml" />
+    <Content Include="Views\MultiplePerpetrators\Delete.cshtml" />
+    <Content Include="Views\MultiplePerpetrators\Details.cshtml" />
+    <Content Include="Views\MultiplePerpetrators\Edit.cshtml" />
+    <Content Include="Views\MultiplePerpetrators\Index.cshtml" />
+    <Content Include="Views\DrugFacilitatedAssaults\Create.cshtml" />
+    <Content Include="Views\DrugFacilitatedAssaults\Delete.cshtml" />
+    <Content Include="Views\DrugFacilitatedAssaults\Details.cshtml" />
+    <Content Include="Views\DrugFacilitatedAssaults\Edit.cshtml" />
+    <Content Include="Views\DrugFacilitatedAssaults\Index.cshtml" />
+    <Content Include="Views\CityOfAssaults\Create.cshtml" />
+    <Content Include="Views\CityOfAssaults\Delete.cshtml" />
+    <Content Include="Views\CityOfAssaults\Details.cshtml" />
+    <Content Include="Views\CityOfAssaults\Edit.cshtml" />
+    <Content Include="Views\CityOfAssaults\Index.cshtml" />
+    <Content Include="Views\CityOfResidences\Create.cshtml" />
+    <Content Include="Views\CityOfResidences\Delete.cshtml" />
+    <Content Include="Views\CityOfResidences\Details.cshtml" />
+    <Content Include="Views\CityOfResidences\Edit.cshtml" />
+    <Content Include="Views\CityOfResidences\Index.cshtml" />
+    <Content Include="Views\ReferringHospitals\Create.cshtml" />
+    <Content Include="Views\ReferringHospitals\Delete.cshtml" />
+    <Content Include="Views\ReferringHospitals\Details.cshtml" />
+    <Content Include="Views\ReferringHospitals\Edit.cshtml" />
+    <Content Include="Views\ReferringHospitals\Index.cshtml" />
+    <Content Include="Views\HospitalAttendeds\Create.cshtml" />
+    <Content Include="Views\HospitalAttendeds\Delete.cshtml" />
+    <Content Include="Views\HospitalAttendeds\Details.cshtml" />
+    <Content Include="Views\HospitalAttendeds\Edit.cshtml" />
+    <Content Include="Views\HospitalAttendeds\Index.cshtml" />
+    <Content Include="Views\SocialWorkAttendances\Create.cshtml" />
+    <Content Include="Views\SocialWorkAttendances\Delete.cshtml" />
+    <Content Include="Views\SocialWorkAttendances\Details.cshtml" />
+    <Content Include="Views\SocialWorkAttendances\Edit.cshtml" />
+    <Content Include="Views\SocialWorkAttendances\Index.cshtml" />
+    <Content Include="Views\PoliceAttendances\Create.cshtml" />
+    <Content Include="Views\PoliceAttendances\Delete.cshtml" />
+    <Content Include="Views\PoliceAttendances\Details.cshtml" />
+    <Content Include="Views\PoliceAttendances\Edit.cshtml" />
+    <Content Include="Views\PoliceAttendances\Index.cshtml" />
+    <Content Include="Views\MedicalOnlies\Create.cshtml" />
+    <Content Include="Views\MedicalOnlies\Delete.cshtml" />
+    <Content Include="Views\MedicalOnlies\Details.cshtml" />
+    <Content Include="Views\MedicalOnlies\Edit.cshtml" />
+    <Content Include="Views\MedicalOnlies\Index.cshtml" />
+    <Content Include="Views\EvidenceStoreds\Create.cshtml" />
+    <Content Include="Views\EvidenceStoreds\Delete.cshtml" />
+    <Content Include="Views\EvidenceStoreds\Details.cshtml" />
+    <Content Include="Views\EvidenceStoreds\Edit.cshtml" />
+    <Content Include="Views\EvidenceStoreds\Index.cshtml" />
+    <Content Include="Views\HIVMeds\Create.cshtml" />
+    <Content Include="Views\HIVMeds\Delete.cshtml" />
+    <Content Include="Views\HIVMeds\Details.cshtml" />
+    <Content Include="Views\HIVMeds\Edit.cshtml" />
+    <Content Include="Views\HIVMeds\Index.cshtml" />
+    <Content Include="Views\ReferredToCBVS\Create.cshtml" />
+    <Content Include="Views\ReferredToCBVS\Delete.cshtml" />
+    <Content Include="Views\ReferredToCBVS\Details.cshtml" />
+    <Content Include="Views\ReferredToCBVS\Edit.cshtml" />
+    <Content Include="Views\ReferredToCBVS\Index.cshtml" />
+    <Content Include="Views\PoliceReporteds\Create.cshtml" />
+    <Content Include="Views\PoliceReporteds\Delete.cshtml" />
+    <Content Include="Views\PoliceReporteds\Details.cshtml" />
+    <Content Include="Views\PoliceReporteds\Edit.cshtml" />
+    <Content Include="Views\PoliceReporteds\Index.cshtml" />
+    <Content Include="Views\ThirdPartyReports\Create.cshtml" />
+    <Content Include="Views\ThirdPartyReports\Delete.cshtml" />
+    <Content Include="Views\ThirdPartyReports\Details.cshtml" />
+    <Content Include="Views\ThirdPartyReports\Edit.cshtml" />
+    <Content Include="Views\ThirdPartyReports\Index.cshtml" />
+    <Content Include="Views\BadDateReports\Create.cshtml" />
+    <Content Include="Views\BadDateReports\Delete.cshtml" />
+    <Content Include="Views\BadDateReports\Details.cshtml" />
+    <Content Include="Views\BadDateReports\Edit.cshtml" />
+    <Content Include="Views\BadDateReports\Index.cshtml" />
     <Content Include="Views\FiscalYears\Create.cshtml" />
     <Content Include="Views\FiscalYears\Delete.cshtml" />
     <Content Include="Views\FiscalYears\Details.cshtml" />
     <Content Include="Views\FiscalYears\Edit.cshtml" />
     <Content Include="Views\FiscalYears\Index.cshtml" />
-    <Content Include="Views\Clients\Create.cshtml" />
-    <Content Include="Views\Clients\Delete.cshtml" />
-    <Content Include="Views\Clients\Details.cshtml" />
-    <Content Include="Views\Clients\Edit.cshtml" />
-    <Content Include="Views\Clients\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -356,6 +457,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201503040807506_LookupInitialCreate.resx">
       <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503052201349_SmartLookupAdded.resx">
+      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503060722201_SmartClient.resx">
+      <DependentUpon>201503060722201_SmartClient.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
