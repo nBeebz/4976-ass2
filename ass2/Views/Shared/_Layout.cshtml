@@ -24,12 +24,14 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Clients", "Index", "Clients")</li>
                     <li class="dropdown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
                             Lookup Tables
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation">@Html.ActionLink("FiscalYears", "Index", "FiscalYears", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("RiskLevels", "Index", "RiskLevels", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("Crises", "Index", "Crises", new { id = 1 }, new { role = "menuitem" })</li>
                             <li role="presentation">@Html.ActionLink("Services", "Index", "Services", new { id = 1 }, new { role = "menuitem" })</li>

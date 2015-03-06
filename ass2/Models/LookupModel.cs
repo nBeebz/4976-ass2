@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace ass2.Models
 {
-    public class FiscalYear
-    {
-        [Key]
-        public int id { get; set; }
-        public string value { get; set; }
-    }
-
     public class RiskLevel
     {
         [Key]
@@ -116,5 +110,10 @@ namespace ass2.Models
         public string value { get; set; }
     }
 
-
+    public class FiscalYear
+    {
+        [Key]
+        public int id { get; set; }
+        public string value { get; set; }
+    }
 }

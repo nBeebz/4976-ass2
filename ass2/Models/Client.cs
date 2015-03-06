@@ -9,10 +9,9 @@ namespace ass2.Models
 {
     public class Client
     {
-        [Key]
+        [Key][Column(Order = 0)]
         public int id { get; set; }
-        [KeyAttribute()]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key][Column(Order = 1)]
         public int ClientReferenceNum { get; set; }
         public int Month { get; set; }
         public int Day { get; set; }

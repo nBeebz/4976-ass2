@@ -182,7 +182,25 @@ namespace ass2.Migrations
                 new StatusOfFile { value = "Open" }
             );
 
+            context.FiscalYears.AddOrUpdate(
+                a => a.id,
+                new FiscalYear { value = "10-11" },
+                new FiscalYear { value = "11-12" },
+                new FiscalYear { value = "12-13" },
+                new FiscalYear { value = "13-14" },
+                new FiscalYear { value = "14-15" },
+                new FiscalYear { value = "15-16" },
+                new FiscalYear { value = "16-17" }
+            );
 
+            /*
+            context.Clients.AddOrUpdate(
+                a => a.id,
+                new Client { 
+                    ClientReferenceNum = 
+                
+                },
+            );*/
         }
     }
 }

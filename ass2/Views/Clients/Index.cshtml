@@ -1,0 +1,123 @@
+﻿@model IEnumerable<ass2.Models.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientReferenceNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Month)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PoliceFileNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourtFileNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SWCFileNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RiskAssessmentAssigned)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AbuserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumOfChildUnderSix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumOfChildUnderTwelve)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumOfChildUnderEighteen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateLastTransferred)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateClosed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateReopened)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientReferenceNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Month)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PoliceFileNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CourtFileNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SWCFileNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RiskAssessmentAssigned)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AbuserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumOfChildUnderSix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumOfChildUnderTwelve)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumOfChildUnderEighteen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateLastTransferred)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateClosed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateReopened)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
