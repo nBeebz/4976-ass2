@@ -8,6 +8,8 @@ namespace MigrationsDemo
 {
     public class SimContext : DbContext
     {
+        /* Client Entity Lookup Tables */
+        public DbSet<FiscalYear> FiscalYears { get; set; }
         public DbSet<RiskLevel> RiskLevels { get; set; }
         public DbSet<Crisis> Crises { get; set; }
         public DbSet<Service> Services { get; set; }
@@ -26,6 +28,7 @@ namespace MigrationsDemo
         public DbSet<DuplicateFile> DuplicateFiles { get; set; }
         public DbSet<StatusOfFile> StatusOfFiles { get; set; }
 
+        /* Smart Entity Lookup Tables */
         public DbSet<SexWorkExploitation> SexWorkExploitation { get; set; }
         public DbSet<MultiplePerpetrators> MultiplePerpetrators { get; set; }
         public DbSet<DrugFacilitatedAssault> DrugFacilitatedAssault { get; set; }
@@ -43,6 +46,9 @@ namespace MigrationsDemo
         public DbSet<PoliceReported> PoliceReported { get; set; }
         public DbSet<ThirdPartyReport> ThirdPartyReport { get; set; }
         public DbSet<BadDateReport> BadDateReport { get; set; }
+
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Smart> Smarts { get; set; } 
 
     }
 
