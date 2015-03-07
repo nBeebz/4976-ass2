@@ -22,6 +22,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: AssignedWorkers/Details/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,6 +38,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: AssignedWorkers/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -47,6 +49,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create([Bind(Include = "id,value")] AssignedWorker assignedWorker)
         {
             if (ModelState.IsValid)
@@ -60,6 +63,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: AssignedWorkers/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -79,6 +83,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit([Bind(Include = "id,value")] AssignedWorker assignedWorker)
         {
             if (ModelState.IsValid)
@@ -91,6 +96,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: AssignedWorkers/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -106,6 +112,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // POST: AssignedWorkers/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

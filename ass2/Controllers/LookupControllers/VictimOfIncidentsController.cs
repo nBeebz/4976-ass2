@@ -22,6 +22,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: VictimOfIncidents/Details/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,6 +38,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: VictimOfIncidents/Create
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             return View();
@@ -47,6 +49,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create([Bind(Include = "id,value")] VictimOfIncident victimOfIncident)
         {
             if (ModelState.IsValid)
@@ -60,6 +63,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: VictimOfIncidents/Edit/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -79,6 +83,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Edit([Bind(Include = "id,value")] VictimOfIncident victimOfIncident)
         {
             if (ModelState.IsValid)
@@ -91,6 +96,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: VictimOfIncidents/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -108,6 +114,7 @@ namespace ass2.Controllers.LookupControllers
         // POST: VictimOfIncidents/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult DeleteConfirmed(int id)
         {
             VictimOfIncident victimOfIncident = db.VictimOfIncidents.Find(id);
