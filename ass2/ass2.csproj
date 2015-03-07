@@ -159,6 +159,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ApplicationUsersController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\LookupControllers\FiscalYearsController.cs" />
     <Compile Include="Controllers\LookupControllers\AbuserRelationshipsController.cs" />
@@ -199,19 +201,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201503040807506_LookupInitialCreate.cs" />
-    <Compile Include="Migrations\201503040807506_LookupInitialCreate.Designer.cs">
-      <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201503052201349_SmartLookupAdded.cs" />
-    <Compile Include="Migrations\201503052201349_SmartLookupAdded.Designer.cs">
-      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201503060722201_SmartClient.cs" />
     <Compile Include="Migrations\201503060722201_SmartClient.Designer.cs">
       <DependentUpon>201503060722201_SmartClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\AppConfig\201503060413433_UserRole.cs" />
+    <Compile Include="Migrations\AppConfig\201503060416503_User.cs" />
+    <Compile Include="Migrations\AppConfig\Configuration.cs" />
+    <Compile Include="Migrations\SimConfig\201503060414231_LookupTables.cs" />
+    <Compile Include="Migrations\SimConfig\201503062122444_InitialCreate.cs" />
+    <Compile Include="Migrations\SimConfig\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClientModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -447,6 +446,19 @@
     <Content Include="Views\FiscalYears\Details.cshtml" />
     <Content Include="Views\FiscalYears\Edit.cshtml" />
     <Content Include="Views\FiscalYears\Index.cshtml" />
+    <Content Include="Views\Admin\ManageRoles.cshtml" />
+    <Content Include="Views\Admin\ManageUsers.cshtml" />
+    <Content Include="Views\Admin\RemoveRole1.cshtml" />
+    <Content Include="Views\Admin\RemoveRole2.cshtml" />
+    <Content Include="Views\Admin\Roles.cshtml" />
+    <Content Include="Views\Admin\Suspend.cshtml" />
+    <Content Include="Views\Admin\Unsuspend.cshtml" />
+    <Content Include="Views\Admin\Users.cshtml" />
+    <Content Include="Views\ApplicationUsers\Create.cshtml" />
+    <Content Include="Views\ApplicationUsers\Delete.cshtml" />
+    <Content Include="Views\ApplicationUsers\Details.cshtml" />
+    <Content Include="Views\ApplicationUsers\Edit.cshtml" />
+    <Content Include="Views\ApplicationUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -459,12 +471,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201503040807506_LookupInitialCreate.resx">
-      <DependentUpon>201503040807506_LookupInitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201503052201349_SmartLookupAdded.resx">
-      <DependentUpon>201503052201349_SmartLookupAdded.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503060722201_SmartClient.resx">
       <DependentUpon>201503060722201_SmartClient.cs</DependentUpon>
     </EmbeddedResource>

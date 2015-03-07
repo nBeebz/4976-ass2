@@ -53,8 +53,6 @@ W:\ASP\ass2\ass2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 W:\ASP\ass2\ass2\obj\Debug\ass2.csprojResolveAssemblyReference.cache
 W:\ASP\ass2\ass2\obj\Debug\ass2.dll
 W:\ASP\ass2\ass2\obj\Debug\ass2.pdb
-W:\ASP\ass2\ass2\obj\Debug\ass2.Migrations.LookupInitialCreate.resources
-W:\ASP\ass2\ass2\obj\Debug\ass2.csproj.GenerateResource.Cache
 G:\Documents\ASP\4976-ass2\ass2\bin\ass2.dll.config
 G:\Documents\ASP\4976-ass2\ass2\bin\ass2.dll
 G:\Documents\ASP\4976-ass2\ass2\bin\ass2.pdb
@@ -108,11 +106,8 @@ G:\Documents\ASP\4976-ass2\ass2\bin\Microsoft.Owin.Security.Google.xml
 G:\Documents\ASP\4976-ass2\ass2\bin\Microsoft.Owin.Security.Twitter.xml
 G:\Documents\ASP\4976-ass2\ass2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.csprojResolveAssemblyReference.cache
-G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.Migrations.LookupInitialCreate.resources
-G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.csproj.GenerateResource.Cache
 G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.dll
 G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.pdb
-G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartLookupAdded.resources
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\ass2.dll.config
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\ass2.dll
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\ass2.pdb
@@ -172,3 +167,5 @@ C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.pdb
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartLookupAdded.resources
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartClient.resources
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.csprojResolveAssemblyReference.cache
+G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartClient.resources
+G:\Documents\ASP\4976-ass2\ass2\obj\Debug\ass2.csproj.GenerateResource.Cache
