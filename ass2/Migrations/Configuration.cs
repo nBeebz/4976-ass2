@@ -16,6 +16,9 @@ namespace ass2.Migrations
 
         protected override void Seed(MigrationsDemo.SimContext context)
         {
+
+
+
             context.RiskLevels.AddOrUpdate(
                 a => a.id,
                 new RiskLevel { value = "High" },
