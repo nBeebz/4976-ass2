@@ -22,7 +22,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: Programs/Details/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -38,7 +38,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: Programs/Create
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Create()
         {
             return View();
@@ -49,7 +49,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Create([Bind(Include = "id,value")] Program program)
         {
             if (ModelState.IsValid)
@@ -63,7 +63,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: Programs/Edit/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -83,7 +83,7 @@ namespace ass2.Controllers.LookupControllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Edit([Bind(Include = "id,value")] Program program)
         {
             if (ModelState.IsValid)
@@ -96,7 +96,7 @@ namespace ass2.Controllers.LookupControllers
         }
 
         // GET: Programs/Delete/5
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -114,7 +114,7 @@ namespace ass2.Controllers.LookupControllers
         // POST: Programs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Administrator")]
         public ActionResult DeleteConfirmed(int id)
         {
             Program program = db.Programs.Find(id);
