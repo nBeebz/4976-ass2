@@ -16,14 +16,6 @@ namespace ass2.Migrations
 
         protected override void Seed(MigrationsDemo.SimContext context)
         {
-            //Seeding users
-            if (!(context.Users.Any(u => u.UserName == "dj@dj.com")))
-            {
-                var userStore = new UserStore<ApplicationUser>(context);
-                var userManager = new UserManager<ApplicationUser>(userStore);
-                var userToInsert = new ApplicationUser { UserName = "dj@dj.com", PhoneNumber = "0797697898" };
-                userManager.Create(userToInsert, "Password@123");
-            }
 
 
 

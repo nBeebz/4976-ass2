@@ -165,8 +165,10 @@ C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Songqi\Desktop\4976-ass2\ass2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.csprojResolveAssemblyReference.cache
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.Migrations.LookupInitialCreate.resources
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.csproj.GenerateResource.Cache
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.dll
 C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.pdb
+C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartLookupAdded.resources
+C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.Migrations.SmartClient.resources
+C:\Users\Songqi\Desktop\4976-ass2\ass2\obj\Debug\ass2.csprojResolveAssemblyReference.cache
